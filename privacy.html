@@ -35,6 +35,7 @@
     <section aria-labelledby="iphone">
       <h2 id="iphone">iPhone internet and cellular calls</h2>
       <p>For an internet call, the voice relay you configure receives your line, the line you call, the call identifier and audio so it can connect both callers. When you pick a contact through the system contact picker, AI Dials receives the selected phone number for dialing.</p>
+      <p>If your relay has a telephony provider, it passes the number and live call audio to that provider to connect a call to or from the phone network. The provider handles call records according to its own privacy policy.</p>
       <p>If you turn on AI for an internet call, iPhone speech recognition transcribes the caller on the device. AI Dials sends the task and relevant transcript text to your relay for replies and summaries from its configured model. The supplied relay forwards internet call audio and processes the assistant input in memory.</p>
       <p>Where background internet calling is enabled, the relay associates an Apple Push Notification service device token with your line to reach your device. For an incoming internet call, the relay sends Apple an invitation with the call identifier and the calling and receiving lines. Apple uses that invitation to deliver the call alert.</p>
       <p>When you choose <strong>Use Phone</strong>, AI Dials gives the number to the iPhone’s Phone app. Apple Phone and your carrier handle that call.</p>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Set up AI Dials, troubleshoot calling, and find help for Android and iPhone.">
+  <title>AI Dials Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="shell masthead">
+      <a class="brand" href="index.html">AI Dials</a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html" aria-current="page">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="shell">
+    <h1>AI Dials support</h1>
+    <p class="lead">Get your line connected, troubleshoot a call or manage your call history.</p>
+
+    <section aria-labelledby="android">
+      <h2 id="android">Android</h2>
+      <details open>
+        <summary>Set up regular calls</summary>
+        <p>Open AI Dials and follow the prompt to set it as your default phone app. Allow phone calls and notifications when prompted. For missed call alerts, check your notification settings and the full-screen alert setting if your phone shows one.</p>
+      </details>
+      <details>
+        <summary>Try AI Practice</summary>
+        <p>Open the menu in AI Dials, choose <strong>Practice call</strong> and pick a mode. The practice conversation uses sample caller lines so you can try the controls and see the outcome.</p>
+      </details>
+      <details>
+        <summary>Connect the voice bridge</summary>
+        <p>Live AI assistance requires Android 14 or later and an AI Dials bridge on a Linux computer with Bluetooth hands-free support. Pair your phone with the bridge. In <strong>Copilot settings</strong>, enter the bridge address, Bluetooth device name, access token and certificate fingerprint supplied by the bridge operator. Tap <strong>Test and save bridge</strong>, then select the paired bridge as the in-call audio device.</p>
+        <p>If audio returns to the handset, check the selected call audio device. Use <strong>Take over</strong> to continue the call yourself.</p>
+      </details>
+    </section>
+
+    <section aria-labelledby="iphone">
+      <h2 id="iphone">iPhone</h2>
+      <details open>
+        <summary>Connect an internet calling line</summary>
+        <p>In AI Dials, open <strong>Settings</strong>. Enter the HTTPS address, line number and access token supplied by your relay operator. Tap <strong>Save and connect</strong> and wait until the keypad shows that the line is connected.</p>
+      </details>
+      <details>
+        <summary>Place a call or fix a connection</summary>
+        <p>To reach another registered line on the same relay, enter its number or extension and tap <strong>Call</strong>. For a regular cellular call, tap <strong>Use Phone</strong> to send the number to the iPhone’s Phone app. If the connection fails, check the relay address and local network access. Ask the relay operator to confirm your line and access token.</p>
+      </details>
+      <details>
+        <summary>Use AI during an internet call</summary>
+        <p>Choose a mode on the call screen. Allow microphone and speech recognition access when prompted. If AI assistance is unavailable, check whether on-device speech recognition is enabled and ask the relay operator to confirm that the model is running.</p>
+      </details>
+    </section>
+
+    <section aria-labelledby="delete">
+      <h2 id="delete">Clear call information</h2>
+      <p>On Android, open <strong>AI call history</strong> to delete a report or clear all reports. Turn off <strong>Keep reports on this device</strong> in AI settings to remove reports saved across restarts.</p>
+      <p>On iPhone, use <strong>Clear recents</strong> to remove recent internet calls and <strong>Clear outcome</strong> to remove the last transcript and summary.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact support</h2>
+      <p>For setup help, feedback or a privacy request, email the developer of AI Dials.</p>
+      <p><a href="mailto:hi@gethandyai.app">hi@gethandyai.app</a></p>
+      <p>Include the device model, system version and steps to reproduce the issue. Leave access tokens, phone numbers and call transcripts out of your message.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="shell"><a href="privacy.html">AI Dials privacy policy</a></div>
+  </footer>
+</body>
+</html>

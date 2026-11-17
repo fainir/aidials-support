@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How AI Dials handles call information, contacts, audio and settings on Android and iPhone.">
+  <title>AI Dials Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="shell masthead">
+      <a class="brand" href="index.html">AI Dials</a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html">Support</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="shell">
+    <h1>AI Dials privacy policy</h1>
+    <p>Updated November 17, 2026</p>
+    <p class="lead">AI Dials uses call information to place and manage calls, and to assist on the calls where you turn AI on. The information and services involved depend on your device and the features you choose.</p>
+
+    <section aria-labelledby="android">
+      <h2 id="android">Android calls and contacts</h2>
+      <p>Android and your carrier carry your regular SIM calls. AI Dials uses the number you enter or choose to place the call and show its controls. With your permission, AI Dials reads contacts and, while it is the default phone app, call history to show contacts, recents and caller information on your device.</p>
+      <p>When you choose voice input for a task, Android opens your installed speech recognizer. AI Dials requests offline recognition and receives the resulting text. The speech service can handle that audio according to its own settings and privacy policy.</p>
+      <p>Live AI assistance uses the Bluetooth hands-free device and local voice bridge you connect. When you activate AI for a call, the bridge processes call audio to recognize and speak words. It receives the task and relevant transcript text from AI Dials to generate replies and summaries with its configured model. The supplied bridge processes call audio and transcripts in memory.</p>
+    </section>
+
+    <section aria-labelledby="iphone">
+      <h2 id="iphone">iPhone internet and cellular calls</h2>
+      <p>For an internet call, the voice relay you configure receives your line, the line you call, the call identifier and audio so it can connect both callers. When you pick a contact through the system contact picker, AI Dials receives the selected phone number for dialing.</p>
+      <p>If you turn on AI for an internet call, iPhone speech recognition transcribes the caller on the device. AI Dials sends the task and relevant transcript text to your relay for replies and summaries from its configured model. The supplied relay forwards internet call audio and processes the assistant input in memory.</p>
+      <p>Where background internet calling is enabled, the relay associates an Apple Push Notification service device token with your line to reach your device. For an incoming internet call, the relay sends Apple an invitation with the call identifier and the calling and receiving lines. Apple uses that invitation to deliver the call alert.</p>
+      <p>When you choose <strong>Use Phone</strong>, AI Dials gives the number to the iPhone’s Phone app. Apple Phone and your carrier handle that call.</p>
+    </section>
+
+    <section aria-labelledby="control">
+      <h2 id="control">Consent, security and service operators</h2>
+      <p>You choose when to use live AI assistance. The assistant announces itself to the other person. Use <strong>Take over</strong> or end the call to stop the assistant.</p>
+      <p>AI Dials uses encrypted connections to your configured bridge and relay. Android protects the bridge access token with its device keystore. iPhone keeps the relay access token in Keychain. Keep your token private and give it only to the intended user of the line.</p>
+      <p>A bridge or relay may be hosted by you or by another operator. Ask that operator about its configuration, logging and retention. Your phone carrier, any speech service you choose and Apple’s push service handle information needed for their respective services.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">What is kept and how to clear it</h2>
+      <ul>
+        <li><strong>Android reports.</strong> Recent reports, with summaries, transcripts and call information, are available in the app while it is running. If you turn on <strong>Keep reports on this device</strong>, the app saves reports encrypted on your device. You can delete reports individually or together in <strong>AI call history</strong>. Turning the setting off clears the saved reports.</li>
+        <li><strong>iPhone recents and outcomes.</strong> The app keeps recent internet call lines and times on the device until you clear them or newer calls replace them. Use <strong>Clear recents</strong> to remove them. The last transcript and outcome stay in app memory. Use <strong>Clear outcome</strong> to remove them.</li>
+        <li><strong>Line settings.</strong> The app saves bridge or relay connection details on your device so it can use the service you configured. Ask your line operator about revoking a token or removing a line or its push registration.</li>
+        <li><strong>System call history.</strong> Android and iPhone manage carrier call history separately from AI Dials reports. Use your phone’s calling history controls to manage it.</li>
+      </ul>
+      <p>Use your phone settings to change AI Dials permissions. You can also change the default phone app in your device settings.</p>
+    </section>
+
+    <section aria-labelledby="questions">
+      <h2 id="questions">Privacy questions</h2>
+      <p>For an AI Dials privacy question, email the developer at <a href="mailto:hi@gethandyai.app">hi@gethandyai.app</a>. For a line or service someone else operates, contact that operator as well.</p>
+      <p>The support inbox receives your email address and any details you send. We keep support correspondence for the time needed to handle your request and follow-up. Use the same address to ask about access to or deletion of support correspondence.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="shell"><a href="index.html">AI Dials support</a></div>
+  </footer>
+</body>
+</html>

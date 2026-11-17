@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  --ink: #142823;
+  --body: #304540;
+  --accent: #005f4b;
+  --accent-bg: #e2f1ec;
+  --rule: #cbd9d4;
+  --paper: #f8fbf9;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.shell {
+  width: min(100% - 2rem, 48rem);
+  margin-inline: auto;
+}
+
+header { border-bottom: 1px solid var(--rule); }
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .25rem .75rem;
+  padding-block: .65rem;
+}
+
+.brand {
+  display: inline-block;
+  padding: .65rem .15rem;
+  color: var(--ink);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  min-height: 2.75rem;
+  padding: .55rem .75rem;
+  border-radius: .4rem;
+}
+
+nav [aria-current="page"] {
+  background: var(--accent-bg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main { padding-block: clamp(2.15rem, 6vw, 4rem); }
+
+h1, h2, h3 {
+  margin-block: 0 .65em;
+  color: var(--ink);
+  line-height: 1.18;
+}
+
+h1 { font-size: clamp(2rem, 1.6rem + 2vw, 3.15rem); }
+h2 { font-size: clamp(1.35rem, 1.15rem + .75vw, 1.7rem); }
+h3 { font-size: 1.1rem; }
+
+p, li { overflow-wrap: anywhere; }
+p { margin-block: .55em 1em; }
+
+.lead {
+  max-width: 38rem;
+  font-size: clamp(1.05rem, 1rem + .3vw, 1.2rem);
+}
+
+main section {
+  margin-top: 2.3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+details { border-bottom: 1px solid var(--rule); }
+
+summary {
+  padding-block: .85rem;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details > p { padding-inline-start: 1.15rem; }
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .15em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding-block: 1rem 1.75rem;
+}
